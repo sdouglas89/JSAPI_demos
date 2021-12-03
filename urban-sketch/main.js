@@ -8,7 +8,7 @@ require([
 
   const webscene = new WebScene({
     portalItem: {
-      id: "74904be5976b418f9a4647db3dd3e989"
+      id: "a0405c02efe14ebfa69b244bda2793b6"
     }
   });
 
