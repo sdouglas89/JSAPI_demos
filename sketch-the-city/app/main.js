@@ -81,6 +81,19 @@ require([
       size: size,
       extensionLength: 2
     };
+    
+    function setSketchRenderer(layer) {
+
+    const outlineColor = mode === "navy" ? [232, 176, 15, 0.8] : [0, 0, 0, 0.8];
+    const fillColor = mode === "navy" ? [10, 10, 10, 0.1] : [232, 176, 15, 0.1];
+    const size = mode === "navy" ? 2 : 1;
+
+    const sketchEdges = {
+      type: "sketch",
+      color: outlineColor,
+      size: size,
+      extensionLength: 2
+    };
 
     // this renderers all the layers with semi-transparent white faces
     // and displays the geometry with sketch edges
