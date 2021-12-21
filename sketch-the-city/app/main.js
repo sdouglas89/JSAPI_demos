@@ -229,6 +229,10 @@ require([
       mode = "light";
       evt.target.innerHTML = "Chalk";
       document.getElementById("customCSS").href = "./styles/light.css";
+    } else {
+      mode = "navy";
+      evt.target.innerHTML = "Navy";
+      document.getElementById("customCSS").href = "./styles/navy.css";
     }
     if (webscene) {
       webscene.layers.forEach(function(layer) {
