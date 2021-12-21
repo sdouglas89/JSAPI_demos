@@ -82,7 +82,7 @@ require([
       extensionLength: 2
     };
     
-    function setSketchRenderer(layer) {
+    function setSketchRenderer(layer1) {
 
     const outlineColor = mode === "navy" ? [232, 176, 15, 0.8] : [0, 0, 0, 0.8];
     const fillColor = mode === "navy" ? [10, 10, 10, 0.1] : [232, 176, 15, 0.1];
@@ -206,6 +206,12 @@ require([
           setSketchRenderer(layer);
           layer.popupEnabled = false;
       });
+      
+      // apply the sketch renderer and disable popup
+      sceneLayers.forEach(function (layer1) {
+          setSketchRenderer(layer1);
+          layer1.popupEnabled = false;
+      });
 
       // add these layers to the empty webscene
       webscene.addMany(sceneLayers);
@@ -251,6 +257,10 @@ require([
       webscene.layers.forEach(function(layer) {
         setSketchRenderer(layer);
       });
+    else if (webscene) {
+      webscene.layers.forEach(function(layer1) {
+        setSketchRenderer(layer1);
+      });  
     }
   });
 });
