@@ -1,0 +1,47 @@
+
+body {
+  color: gold;
+}
+
+body {
+  background-image: url('./background-navy-blue.jpg');
+  background-size: cover;
+}
+
+#menu button {
+  background: #00205B;
+  color: gold;
+  border-bottom: 1px solid gold;
+}
+
+.esri-attribution, #intro, #loading, #error {
+  color: gold;
+}
+
+.esri-attribution, #attribution {
+  background-color: #00205B;
+}
+
+#menu button:hover, #mode:hover, .slide:hover {
+  background: #555;
+}
+
+a:hover {
+  color: #E8B00F;
+}
+
+#mode {
+  background: #00205B;
+  color: gold;
+  border-bottom: 1px solid gold;
+}
+
+#loading>img {
+  filter: brightness(5);
+}
+
+.slide {
+  background: #00205B;
+  color: gold;
+  border-color: gold;
+}
