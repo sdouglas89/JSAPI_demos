@@ -225,7 +225,7 @@ require([
       mode = "dark";
       evt.target.innerHTML = "Pencil";
       document.getElementById("customCSS").href = "./styles/dark.css";
-    } else {
+    } else if {
       mode = "light";
       evt.target.innerHTML = "Chalk";
       document.getElementById("customCSS").href = "./styles/light.css";
